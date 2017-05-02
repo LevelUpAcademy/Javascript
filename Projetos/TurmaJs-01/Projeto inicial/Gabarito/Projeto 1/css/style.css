@@ -1,0 +1,22 @@
+.row{
+	margin-left: 0px!important;
+}
+
+
+
+.content{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.menu{
+	margin: 50px 0px;
+}
+
+.hidden{
+	display: none;
+}
+
+.visible{
+	display: block;
+}

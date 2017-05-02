@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Funcionarios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="scripts/app.js" ></script>
+</head>
+<body>
+<div class="content">
+	<div class="jumbotron">
+		<h1>Cadastro de funcionários</h1>
+	</div>
+
+	<div class="menu">
+		<button class="btn btn-primary active" id="btn-todos" onclick="OpenAll();">Todos</button>
+		<button class="btn btn-primary" id="btn-novo" onclick="OpenForm();">Novo</button>
+	</div>
+
+	<div id="all">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Cargo</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody id="table-body">
+				
+			</tbody>
+		</table>
+	</div>
+
+
+	<div id="new" class="hidden">
+		<div class="row">
+			<form name="cadastro">
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" class="form-control"></input>
+				</div>
+				<div>
+					<label for="cargo">Cargo</label>
+					<input type="text" name="cargo" class="form-control"></input>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="email" class="form-control"></input>
+				</div>
+
+				<br>
+
+				<input type="submit" value="Cadastrar" class="btn btn-primary"></input>
+				<input type="reset" value="Limpar" class="btn"></input>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
